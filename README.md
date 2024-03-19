@@ -1,6 +1,5 @@
 # Heart Disease Prediction Analysis
 this repository containing analyses and models for predicting heart disease. It includes clustering analyses, classification tree, and logistic regression models applied to dataset USING THE # SPSS.
-**README**
 
 aimed at predicting heart failure,
 
