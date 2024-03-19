@@ -1,0 +1,43 @@
+For the ANOVA Table Here is the Interpretation : 
+ 
+1. Age:
+
+- The F-statistic is 79.161 with a p-value < 0.001, indicating a significant difference in mean age between groups.
+
+2. RestingBP:
+
+- The F-statistic is 10.727 with a p-value of 0.001, indicating a significant difference in mean resting blood pressure between groups.
+
+3. Cholesterol:
+
+- The F-statistic is 52.460 with a p-value < 0.001, indicating a significant difference in mean cholesterol levels between groups.
+
+4. Oldpeak:
+
+- The F-statistic is 178.615 with a p-value < 0.001, indicating a significant difference in mean ST depression induced by exercise relative to rest between groups.
+
+5.MaxHR:
+
+- The F-statistic is 174.914 with a p-value < 0.001, indicating a significant difference in mean maximum heart rate achieved between groups.
+
+For the Chi-Square Test Here is the Interpretation : 
+
+1. Fisher's Exact Test:
+
+- Fisher's exact test is used to determine if there is a significant association between categorical variables, especially when the sample size is small.
+- The p-value associated with this test is less than 0.001, indicating a significant association between the variables in the contingency table.
+
+For the Factor Analysis Here is the Interpretation :
+
+1. Component 1:
+
+- Age has a high loading (0.781) on Component 1, indicating a strong positive association between age and Component 1.
+- RestingBP (0.404), Cholesterol (-0.383), FastingBS (0.457), and Oldpeak (0.435) also have moderate loadings on Component 1.
+- MaxHR has a strong negative loading (-0.696) on Component 1, indicating a strong negative association between MaxHR and Component 1.
+
+2. Component 2:
+
+- RestingBP (0.524), Cholesterol (0.735), and Oldpeak (0.508) have relatively high loadings on Component 2.
+- FastingBS (-0.422) and MaxHR (0.095) have lower loadings on Component 2.
+- Age has a very low loading (0.139) on Component 2.
+

@@ -1,0 +1,148 @@
+This File is for the Interpretation of what I have got in Output 1
+
+1. Age:
+
+- Mean: The average age of individuals in the dataset is approximately 53.51 years.
+- Minimum: The youngest individual in the dataset is 28 years old.
+- Maximum: The oldest individual in the dataset is 77 years old.
+- Standard Deviation: The age values are spread around the mean by approximately 9.433 years on average.
+- Skewness: The distribution of ages is slightly negatively skewed (-0.196), indicating a slight tendency for more individuals to be younger than the mean.
+- Kurtosis: The distribution is slightly platykurtic (-0.386), meaning it's slightly flatter than a normal distribution.
+
+
+2. RestingBP (Resting Blood Pressure):
+
+- Mean: The average resting blood pressure is approximately 132.40 mmHg.
+- Minimum: The lowest recorded resting blood pressure is 0 mmHg, which is likely an error or missing value.
+- Maximum: The highest recorded resting blood pressure is 200 mmHg.
+- Standard Deviation: The values of resting blood pressure are spread around the mean by approximately 18.514 mmHg on average.
+- Skewness: The distribution of resting blood pressure is positively skewed (0.180), indicating a slight tendency for more individuals to have higher blood pressure.
+- Kurtosis: The distribution is leptokurtic (3.271), meaning it has heavier tails and a sharper peak compared to a normal distribution.
+
+
+3. Cholesterol:
+
+- Mean: The average cholesterol level is approximately 198.80 mg/dl.
+- Minimum: The lowest recorded cholesterol level is 0 mg/dl, which is likely an error or missing value.
+- Maximum: The highest recorded cholesterol level is 603 mg/dl.
+- Standard Deviation: The values of cholesterol are spread around the mean by approximately 109.384 mg/dl on average.
+- Skewness: The distribution of cholesterol levels is negatively skewed (-0.610), indicating a slight tendency for more individuals to have lower cholesterol levels.
+- Kurtosis: The distribution is slightly leptokurtic (0.118), meaning it has heavier tails and a sharper peak compared to a normal distribution.
+
+4. MaxHR (Maximum Heart Rate Achieved):
+
+- Mean: The average maximum heart rate achieved is approximately 136.81 beats per minute (bpm).
+- Minimum: The lowest recorded maximum heart rate is 60 bpm.
+- Maximum: The highest recorded maximum heart rate is 202 bpm.
+- Standard Deviation: The values of maximum heart rate achieved are spread around the mean by approximately 25.460 bpm on average.
+- Skewness: The distribution of maximum heart rates is slightly negatively skewed (-0.144), indicating a slight tendency for more individuals to have lower maximum heart rates.
+- Kurtosis: The distribution is slightly platykurtic (-0.448), meaning it's slightly flatter than a normal distribution.
+
+5. Oldpeak:
+
+- Mean: The average ST depression induced by exercise relative to rest is approximately 0.887.
+- Minimum: The lowest recorded value of ST depression is -2.6.
+- Maximum: The highest recorded value of ST depression is 6.2.
+- Standard Deviation: The values of ST depression are spread around the mean by approximately 1.0666 on average.
+- Skewness: The distribution of ST depression values is positively skewed (1.023), indicating a slight tendency for more individuals to have higher ST depression values.
+- Kurtosis: The distribution is slightly leptokurtic (1.203), meaning it has heavier tails and a sharper peak compared to a normal distribution.
+
+For the Missing Value Analysis Here is the interpretation : 
+
+1. Age:
+
+- There are 918 observations of age.
+- The mean age is approximately 53.51 years with a standard deviation of 9.433 years.
+- There are no missing values for age, and there are no extreme values (outliers).
+
+2. RestingBP (Resting Blood Pressure):
+
+- There are 918 observations of resting blood pressure.
+- The mean resting blood pressure is 132.40 mmHg with a standard deviation of 18.514 mmHg.
+- There are no missing values for resting blood pressure.
+- There are 2 extreme values below the lower limit and 40 extreme values above the upper limit.
+
+3. Cholesterol:
+
+- There are 918 observations of cholesterol levels.
+- The mean cholesterol level is 198.80 mg/dL with a standard deviation of 109.384 mg/dL.
+- There are no missing values for cholesterol.
+- There are 172 extreme values below the lower limit and 11 extreme values above the upper limit.
+
+4. MaxHR (Maximum Heart Rate Achieved):
+
+- There are 918 observations of maximum heart rate achieved.
+- The mean maximum heart rate achieved is 136.81 beats per minute with a standard deviation of 25.460 beats per minute.
+- There are no missing values for maximum heart rate achieved, and there are no extreme values (outliers).
+
+5. Oldpeak:
+
+- There are 918 observations of the ST depression induced by exercise relative to rest.
+- The mean old peak value is approximately 0.887 with a standard deviation of 1.0666.
+- There are no missing values for oldpeak.
+- There is 1 extreme value below the lower limit and 15 extreme values above the upper limit.
+
+6. FastingBS (Fasting Blood Sugar):
+
+-There are 918 observations of fasting blood sugar, but the mean and standard deviation are not provided in this table.
+
+7. HeartDisease:
+
+- There are 918 observations of heart disease, with a mean of approximately 0.55 and a standard deviation of approximately 0.497.
+- There are no missing values for heart disease, and there are no extreme values (outliers).
+
+For the t-test for Equality of Means, Here is the Interpretation :
+
+This test assesses whether there is a significant difference between the means of the two groups being compared.
+
+1. Age:
+- When equal variances are assumed, the t-test statistic (t) is 1.690 with a two-sided p-value of 0.091 (>0.05), suggesting that there is no significant difference in the mean age between the two groups.
+- When equal variances are not assumed, the t-test statistic (t) is 1.678 with a two-sided p-value of 0.047 (<0.05), indicating a significant difference in the mean age between the two groups.
+
+2. Cholesterol:
+- Both when equal variances are assumed and not assumed, the t-test statistics (t) are significantly negative (-6.181 and -7.238 respectively),
+  and the corresponding p-values are extremely small (<0.001), indicating a significant difference in the mean cholesterol levels between the two groups.
+- In both cases, the mean cholesterol level in one group is significantly lower than the other.
+
+
+For Regression Here is the Interpretation :
+
+R squared :
+This is the coefficient of determination, representing the proportion of variance in the dependent variable (Age) explained by the predictors. 
+In this case, it's approximately 0.239, indicating that around 23.9% of the variance in Age is explained by the predictors.
+
+Adjusted R squared :
+This adjusts the R Square value for the number of predictors in the model, providing a more accurate estimate of the model's goodness of fit. 
+It's approximately 0.234 in this case.
+
+Standard Error of the Estimate: 
+This represents the standard deviation of the residuals (the differences between the observed and predicted values of Age). 
+A lower value indicates a better fit of the model to the data. Here, it's approximately 8.254.
+
+Durbin-Watson: 
+This statistic tests for the presence of autocorrelation in the residuals. 
+The value of 1.644 suggests a moderate positive autocorrelation.
+
+For the Pearson Correlation Matrix Here is the Interpretation :
+
+- Age and RestingBP have a positive correlation of approximately 0.254, indicating that as age increases, resting blood pressure tends to increase as well.
+- Age and Cholesterol have a negative correlation of approximately -0.095, suggesting a weak negative relationship between age and cholesterol levels.
+- Age and FastingBS have a positive correlation of approximately 0.198, implying that as age increases, fasting blood sugar tends to increase too.
+- Age and MaxHR have a strong negative correlation of approximately -0.382, indicating that as age increases, the maximum heart rate achieved tends to decrease.
+- Age and Oldpeak have a positive correlation of approximately 0.259, indicating a weak positive relationship between age and the ST depression induced by exercise relative to rest.
+- Age and heart disease have a positive correlation of approximately 0.282, suggesting a weak positive relationship between age and the presence of heart disease.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

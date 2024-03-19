@@ -1,0 +1,45 @@
+the output 04 for both the Classification Tree and the Logistic Regression model:
+
+### Classification Tree:
+
+Model Summary:
+- Growing Method (CHAID): The classification tree was built using the CHAID algorithm, which automatically detects interactions between variables to create the tree.
+- Dependent Variable (HeartDisease): The variable being predicted by the model.
+- Independent Variables: Features used to predict heart disease, including age, sex, chest pain type, etc.
+- Validation: No validation method was applied.
+- Maximum Tree Depth: The tree was limited to a depth of 3 levels to avoid overfitting.
+- Minimum Cases in Parent Node: A split was made only if there were at least 100 cases in the parent node.
+- Minimum Cases in Child Node: Each resulting child node needed to have at least 50 cases.
+
+Results:
+- Independent Variables Included in Tree: ST_Slope, ChestPainType, RestingECG, Oldpeak, MaxHR: These variables were chosen as the most significant predictors by the algorithm.
+- Number of Nodes: The tree has 16 nodes in total.
+- Number of Terminal Nodes: There are 9 terminal nodes, which are the end points where predictions are made.
+- Depth: The maximum depth of the tree is 3.
+
+Risk Estimate:
+- Estimate: The estimated risk of heart disease based on the classification tree is 0.157, with a standard error of 0.012.
+
+Classification:
+- Overall Percentage Correct: 84.3%: The overall accuracy of the model in predicting heart disease.
+- Observed vs. Predicted: The percentage of correct predictions for each class.
+
+### Logistic Regression:
+
+Model Summary:
+- Method (Enter): All independent variables were entered into the model simultaneously.
+- Dependent Variable (HeartDisease): The variable being predicted.
+- Independent Variables: Features included in the logistic regression model.
+- Omnibus Tests of Model Coefficients: Indicates the overall significance of the model.
+- -2 Log likelihood: A measure of model fit.
+- Cox & Snell R Square: An indicator of the proportion of variance explained by the model.
+- Nagelkerke R Square: Similar to Cox & Snell R Square, but adjusted for sample size and number of predictors.
+
+Classification Table:
+- Overall Percentage Correct: The percentage of correct predictions made by the logistic regression model.
+- Observed vs. Predicted: The percentage of correct predictions for each class.
+
+Variables in the Equation:
+- Coefficients, standard errors, Wald statistics, degrees of freedom, and significance levels for each predictor included in the model.
+
+In summary, both models aim to predict heart disease, with the classification tree offering a more interpretable structure of decision rules, while logistic regression provides coefficients indicating the strength and direction of the relationship between predictors and the outcome.
